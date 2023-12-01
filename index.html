@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .top-banner {
+        background-color: #678BAF;
+        padding: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: Monaco, monospace;
+        height: 25px;
+        line-height: 0%;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      body {
+        background-color: #3D3B3B;
+      }
+      .line {
+        position: relative;
+        border: none;
+        height: 1px;
+      }
+      .line::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 50%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, #A09F9F);
+      }
+      .line::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 0;
+        height: 100%;
+        background: linear-gradient(to left, transparent, #A09F9F);
+      }
+      .game-container {
+        display: inline-flex; /* Change to inline-flex */
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .game-container a {
+        margin: 0 20px; /* Add margin between game items */
+        text-align: center;
+        text-decoration: none; /* Remove underline from link */
+      }
+      .game-container a p {
+        pointer-events: none; /* Disable click event for p element */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-banner">
+      <h2>Private Game Site</h2>
+    </div>
+    <hr class="line">
+    <div class="game-container">
+      <a href="Games/robogo">
+        <img src="GameImages/robogoimg.jfif" style="height: 100px; width: 150px; border-radius: 20px;">
+        <p>RoboGo</p>
+      </a>
+      <a href="Games/">
+        <img src="GameImages/Tube Jumpers.jfif" style="height: 100px; width: 150px; border-radius: 20px;">
+        <p>Tube Jumpers</p>
+      </a>
+    </div>
+  </body>
+</html>
